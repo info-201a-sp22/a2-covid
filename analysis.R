@@ -173,7 +173,10 @@ highest_cases_in_each_state <- counties %>%
 # Inspect the `highest_cases_in_each_state` dataframe
 # Which county has the highest number of cases in the state of Washington, and does it surprise you? Why or why not? (You may need to google this county to learn about it)
 
-highest_number_in_washington <- counties %>% filter(state == "Washington") %>% filter(cases == max(cases, na.rm = TRUE)) %>% pull(location)
+highest_number_in_washington <- counties %>%
+  filter(state == "Washington") %>%
+  filter(cases == max(cases, na.rm = TRUE)) %>%
+  pull(location)
 
 
 # 3.b For each state, what is the county with the lowest number of COVID-related deaths (not cases this time)?
@@ -200,7 +203,9 @@ lowest_deaths_in_each_state <- counties %>%
 # 4.a Create a `total_cases_counties` dataframe that adds up all the COIVD cases for all the counties for every date in the counties dataframe.
 # You should name the columns `date` and `county_total_cases`.
 
-total_cases_counties <- counties %>% group_by(date) %>% summarise(county_total_cases = sum(cases, na.rm = TRUE))
+total_cases_counties <- counties %>%
+  group_by(date) %>%
+  summarise(county_total_cases = sum(cases, na.rm = TRUE))
 
 # 4.b Join `total_cases_counties` with the `national` dataframe.
 # Save this dataframe as `all_totals`.
@@ -209,7 +214,8 @@ all_totals <- left_join(total_cases_counties,national)
 
 # 4.c Filter the all_totals dataframe to find only the rows where the "county_total_cases" column does not match the "cases" column
 # Save as national_county_diff
-national_county_diff <- all_totals %>% filter(county_total_cases != cases)
+national_county_diff <- all_totals %>%
+  filter(county_total_cases != cases)
 
 # 4.d Calculate the number of rows in the national_county_diff dataframe
 # Save as num_national_county_diff
