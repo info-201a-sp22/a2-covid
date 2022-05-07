@@ -17,26 +17,43 @@ Before actually calculating the total number of COVID cases and deaths, record y
 
 Guess: How many total COVID cases do you think there have been in the U.S.?
 
+   around 50 million maybe
+   
 Guess: How many total COVID-related deaths do you think there have been in the U.S.?
-
+   I would say around one million
+   
 Guess: Which state do you think has the highest number of COVID cases, and which state do you think has the lowest?
+
+  Deffinetly montana since its so large. 
 
 ## Reflection 2
 Did the number of COVID cases and deaths surprise you? Why or why not? What about the states with the highest and lowest number of cases? How did your guesses line up with the actual results? Answer in at least 1-3 sentences
 
+Yes it did since I didnt expect the numebers to be so high. I think it did line up with my ideas. 
+
 ## Reflection 3
 Which county has the highest number of cases in the state of Washington, and does it surprise you? Why or why not? (You may need to google this county to learn about it) Answer at least in 1-3 sentences
 
+  Snohomish, washington. This is really suprising since its such a hidden area in washington.
+    
 ## Reflection 4
 Why are there so many observations (counties) in the variable `lowest_deaths_in_each_state`? That is, wouldn't you expect the number to be around 50? Why is the number greater than 50? Answer in at least 1-3 sentences
 
+ The deaths are in very outskirted areas in the united states, deffintly why the number of deaths are so low.
+    
 
 ## Reflection 5
 What do you think about the number and scale of the inconsistencies in the data? Does the fact that there are inconsistencies mean that people should not use this data? Why or why not? Answer in at least 1-3 sentences
+
+   Yes, I feel that it does have something to do with that since not every data set will be perfect, especially with those kinds of numbers. 
 
 
 ## Reflection 6
 Why were you interested in this particular question? Were you able to answer your question with code? What did you learn? Answer in at least 1-3 sentences
 
+    I was interested in this question because I feel that its important to track the cases in the begining as it is at the end. 
+
 ## Reflection 7
 What, if anything, made you curious about this COVID analysis? What, if anything, surprised you? What might you do the same or differently on your next data wrangling project? Answer in at least 1-3 sentences
+
+    I feel that maybe when the new variant comes out, how will the data set change? Will they share any similaritys. 
